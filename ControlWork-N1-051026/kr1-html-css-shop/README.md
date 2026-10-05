@@ -12,7 +12,7 @@
 ## Ссылки
 
 Репозиторий: https://github.com/Portaresku-AI/Frontend_and_Backend.git 
-GitHub Pages: 
+GitHub Pages: https://portaresku-ai.github.io/Frontend_and_Backend/
 
 ## Структура
 

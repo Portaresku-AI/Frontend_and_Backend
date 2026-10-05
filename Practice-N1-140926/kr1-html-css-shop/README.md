@@ -47,7 +47,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://Portaresku-AI.github.io/kr1-html-css-shop/
+GitHub Pages: https://portaresku-ai.github.io/Frontend_and_Backend/
 
 ## Автор
 
