@@ -11,8 +11,8 @@
 
 ## Ссылки
 
-Репозиторий: **ДОБАВИТЬ ССЫЛКУ**  
-GitHub Pages: **ДОБАВИТЬ ССЫЛКУ ПОСЛЕ ПУБЛИКАЦИИ**
+Репозиторий: https://github.com/Portaresku-AI/Frontend_and_Backend.git 
+GitHub Pages: 
 
 ## Структура
 
