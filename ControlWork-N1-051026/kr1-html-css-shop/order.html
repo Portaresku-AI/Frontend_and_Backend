@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Оформление заявки. Учебный магазин компьютерной техники КомпМаркет.">
+    <title>Оформление заявки — КомпМаркет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">КомпМаркет</a>
+        <nav aria-label="Основное меню">
+          <ul class="menu">
+            <li>
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="menu__link" href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a class="menu__link" href="product.html">Товары</a>
+            </li>
+            <li>
+              <a class="menu__link menu__link--active" href="order.html" aria-current="page">Заявка</a>
+            </li>
+            <li>
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Оформление заявки</h1>
+      <p>Учебная форма. Используйте вымышленные данные: они не отправляются и не сохраняются.</p>
+      <form class="order-form" method="dialog" data-demo-form="result-dialog">
+        <p class="note">Поля со звёздочкой обязательны.</p>
+        <div class="order-form__field">
+          <label for="name">Имя *</label>
+          <input id="name" name="customer_name" type="text" minlength="2" maxlength="60" autocomplete="given-name" required>
+        </div>
+        <div class="order-form__field">
+          <label for="email">E-mail *</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="order-form__field">
+          <label for="phone">Телефон *</label>
+          <input id="phone" name="phone" type="tel" pattern="[0-9]{11}" maxlength="11" inputmode="numeric" autocomplete="tel" placeholder="89991234567" aria-describedby="phone-hint" required>
+          <small id="phone-hint">Введите 11 цифр без пробелов и знака +.</small>
+        </div>
+        <div class="order-form__field">
+          <label for="product">Товар *</label>
+          <select id="product" name="product" required>
+            <option value="" selected disabled>Выберите товар</option>
+            <option value="laptop">Ноутбук Study 14</option>
+            <option value="keyboard">Клавиатура Key K1</option>
+            <option value="mouse">Мышь Click M1</option>
+          </select>
+        </div>
+        <div class="order-form__field">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" rows="4" maxlength="500"></textarea>
+        </div>
+        <label class="checkbox" for="consent">
+          <input id="consent" name="consent" type="checkbox" value="yes" required>
+          <span>Согласен на обработку данных в рамках учебной демонстрации *</span>
+        </label>
+        <div class="actions">
+          <button class="button" type="submit">Отправить заявку</button>
+          <button class="button button--light" type="reset">Очистить</button>
+        </div>
+        <noscript>
+          <p>Для открытия окна результата включите JavaScript. Без него форма не отправляется.</p>
+        </noscript>
+      </form>
+      <dialog id="result-dialog" class="modal" aria-labelledby="result-title">
+        <h2 id="result-title">Форма заполнена</h2>
+        <p>Браузер проверил обязательные поля. Это демонстрация: заявка не отправлена.</p>
+        <form method="dialog">
+          <button class="button" autofocus>Закрыть</button>
+        </form>
+      </dialog>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 КомпМаркет. Учебный проект.</p>
+        <p>Товары, характеристики, цены и контакты вымышлены.</p>
+        <a href="contacts.html">Контакты магазина</a>
+      </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  </body>
+</html>

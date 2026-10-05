@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог. Учебный магазин компьютерной техники КомпМаркет.">
+    <title>Каталог — КомпМаркет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">КомпМаркет</a>
+        <nav aria-label="Основное меню">
+          <ul class="menu">
+            <li>
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="menu__link menu__link--active" href="catalog.html" aria-current="page">Каталог</a>
+            </li>
+            <li>
+              <a class="menu__link" href="product.html">Товары</a>
+            </li>
+            <li>
+              <a class="menu__link" href="order.html">Заявка</a>
+            </li>
+            <li>
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Каталог товаров</h1>
+      <p>Выберите категорию или перейдите к описанию товара.</p>
+      <div class="catalog">
+        <aside class="filter">
+          <h2>Категории</h2>
+          <ul class="filter__links">
+            <li>
+              <a href="#computers">Компьютеры</a>
+            </li>
+            <li>
+              <a href="#accessories">Периферия</a>
+            </li>
+          </ul>
+          <form>
+              <legend>Фильтры</legend>
+              <label for="price">Цена</label>
+              <select id="price" name="price">
+                <option>Любая</option>
+                <option>До 5 000 ₽</option>
+                <option>От 5 000 ₽</option>
+              </select>
+              <label class="checkbox" for="available">
+                <input id="available" name="available" type="checkbox">В наличии</label>
+              <button class="button" type="button">Применить</button>
+          </form>
+          <p class="note">Фильтры — статический, но кликабельный макет. Ссылки категорий работают.</p>
+        </aside>
+        <div>
+          <section id="computers">
+            <h2>Компьютеры</h2>
+            <div class="cards cards--catalog">
+              <article class="card">
+                <div class="card__picture">
+                  <img src="images/laptop.svg" alt="Ноутбук Study 14" width="440" height="280">
+                  <span class="card__badge">Хит</span>
+                </div>
+                <div class="card__body">
+                  <p class="card__category">Компьютеры</p>
+                  <h3>Ноутбук Study 14</h3>
+                  <p>Компактный ноутбук для учёбы, документов и просмотра видео.</p>
+                  <p class="card__price">44 990 ₽</p>
+                  <a class="button" href="product.html#laptop">Подробнее<span class="visually-hidden">: Ноутбук Study 14</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section id="accessories">
+            <h2>Периферия</h2>
+            <div class="cards cards--catalog">
+              <article class="card card--new">
+                <div class="card__picture">
+                  <img src="images/keyboard.svg" alt="Клавиатура Key K1" width="440" height="280">
+                  <span class="card__badge">Новинка</span>
+                </div>
+                <div class="card__body">
+                  <p class="card__category">Периферия</p>
+                  <h3>Клавиатура Key K1</h3>
+                  <p>Проводная клавиатура с цифровым блоком для повседневной работы.</p>
+                  <p class="card__price">1 990 ₽</p>
+                  <a class="button" href="product.html#keyboard">Подробнее<span class="visually-hidden">: Клавиатура Key K1</span>
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card__picture">
+                  <img src="images/mouse.svg" alt="Мышь Click M1" width="440" height="280">
+                </div>
+                <div class="card__body">
+                  <p class="card__category">Периферия</p>
+                  <h3>Мышь Click M1</h3>
+                  <p>Простая проводная мышь для ноутбука или настольного компьютера.</p>
+                  <p class="card__price">990 ₽</p>
+                  <a class="button" href="product.html#mouse">Подробнее<span class="visually-hidden">: Мышь Click M1</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 КомпМаркет. Учебный проект.</p>
+        <p>Товары, характеристики, цены и контакты вымышлены.</p>
+        <a href="contacts.html">Контакты магазина</a>
+      </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  </body>
+</html>

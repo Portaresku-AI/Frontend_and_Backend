@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание товаров. Учебный магазин компьютерной техники КомпМаркет.">
+    <title>Описание товаров — КомпМаркет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="index.html">КомпМаркет</a>
+        <nav aria-label="Основное меню">
+          <ul class="menu">
+            <li>
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="menu__link" href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a class="menu__link menu__link--active" href="product.html" aria-current="page">Товары</a>
+            </li>
+            <li>
+              <a class="menu__link" href="order.html">Заявка</a>
+            </li>
+            <li>
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Описание товаров</h1>
+      <p>
+        <a href="catalog.html">← Вернуться в каталог</a>
+      </p>
+      <button class="button button--light" type="button" data-dialog="delivery-dialog">Условия доставки</button>
+      <section class="product" id="laptop">
+        <div class="product__main">
+          <img src="images/laptop.svg" alt="Ноутбук Study 14" width="440" height="280">
+          <div>
+            <h2>Ноутбук Study 14</h2>
+            <p>Компактный ноутбук для учёбы, документов и просмотра видео.</p>
+            <p class="product__price">44 990 ₽</p>
+            <a class="button" href="order.html">Оставить заявку</a>
+            <p class="note">Выберите эту модель в форме заявки.</p>
+          </div>
+        </div>
+        <table>
+          <caption>Характеристики: Ноутбук Study 14</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Экран</th>
+              <td>14 дюймов, 1920 × 1080</td>
+            </tr>
+            <tr>
+              <th scope="row">Процессор</th>
+              <td>4 ядра, до 3,4 ГГц</td>
+            </tr>
+            <tr>
+              <th scope="row">Оперативная память</th>
+              <td>8 ГБ</td>
+            </tr>
+            <tr>
+              <th scope="row">Накопитель</th>
+              <td>SSD 256 ГБ</td>
+            </tr>
+            <tr>
+              <th scope="row">Вес</th>
+              <td>1,4 кг</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="product" id="keyboard">
+        <div class="product__main">
+          <img src="images/keyboard.svg" alt="Клавиатура Key K1" width="440" height="280">
+          <div>
+            <h2>Клавиатура Key K1</h2>
+            <p>Проводная клавиатура с цифровым блоком для повседневной работы.</p>
+            <p class="product__price">1 990 ₽</p>
+            <a class="button" href="order.html">Оставить заявку</a>
+            <p class="note">Выберите эту модель в форме заявки.</p>
+          </div>
+        </div>
+        <table>
+          <caption>Характеристики: Клавиатура Key K1</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Тип</th>
+              <td>Мембранная</td>
+            </tr>
+            <tr>
+              <th scope="row">Подключение</th>
+              <td>USB-A</td>
+            </tr>
+            <tr>
+              <th scope="row">Количество клавиш</th>
+              <td>104</td>
+            </tr>
+            <tr>
+              <th scope="row">Раскладка</th>
+              <td>Русская и английская</td>
+            </tr>
+            <tr>
+              <th scope="row">Длина кабеля</th>
+              <td>1,5 м</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="product" id="mouse">
+        <div class="product__main">
+          <img src="images/mouse.svg" alt="Мышь Click M1" width="440" height="280">
+          <div>
+            <h2>Мышь Click M1</h2>
+            <p>Простая проводная мышь для ноутбука или настольного компьютера.</p>
+            <p class="product__price">990 ₽</p>
+            <a class="button" href="order.html">Оставить заявку</a>
+            <p class="note">Выберите эту модель в форме заявки.</p>
+          </div>
+        </div>
+        <table>
+          <caption>Характеристики: Мышь Click M1</caption>
+          <thead>
+            <tr>
+              <th scope="col">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Тип</th>
+              <td>Оптическая</td>
+            </tr>
+            <tr>
+              <th scope="row">Подключение</th>
+              <td>USB-A</td>
+            </tr>
+            <tr>
+              <th scope="row">Разрешение сенсора</th>
+              <td>1200 dpi</td>
+            </tr>
+            <tr>
+              <th scope="row">Количество кнопок</th>
+              <td>3, включая нажатие колеса</td>
+            </tr>
+            <tr>
+              <th scope="row">Длина кабеля</th>
+              <td>1,5 м</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <dialog id="delivery-dialog" class="modal" aria-labelledby="delivery-title">
+        <h2 id="delivery-title">Доставка</h2>
+        <p>Вы можете представить, что товар уже у Вас.</p>
+        <p>Магазин вымышленный, все товары вымышленные, настоящие заказы не принимаются.</p>
+        <form method="dialog">
+          <button class="button" autofocus>Закрыть</button>
+        </form>
+      </dialog>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 КомпМаркет. Учебный проект.</p>
+        <p>Товары, характеристики, цены и контакты вымышлены.</p>
+        <a href="contacts.html">Контакты магазина</a>
+      </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  </body>
+</html>
