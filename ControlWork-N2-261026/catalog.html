@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Билеты, экспедиции и сувениры Jurassic Park. Поиск, фильтр категорий и сортировка учебного каталога.">
+<meta name="theme-color" content="#10281f">
+<title>Каталог приключений и сувениров — Jurassic Park</title>
+<link rel="icon" href="images/logo-film.png" type="image/png">
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+<body id="top" class="">
+<a class="visually-hidden-focusable skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header"><nav class="navbar navbar-expand-xl" data-bs-theme="dark" aria-label="Основное меню"><div class="container">
+<a class="navbar-brand park-brand" href="index.html" aria-label="Jurassic Park — главная"><img class="park-brand__logo" src="images/logo-film.png" width="1472" height="828" alt="Jurassic Park"><span class="park-brand__caption">ОСТРОВ<br>ОТКРЫТИЙ</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNavbar"><ul class="navbar-nav ms-auto align-items-xl-center gap-xl-3">
+<li class="nav-item"><a class="nav-link " href="index.html">Парк</a></li>
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li>
+<li class="nav-item"><a class="nav-link " href="product.html">Предложение</a></li>
+<li class="nav-item"><a class="nav-link " href="contacts.html">Контакты</a></li>
+<li class="nav-item"><a class="nav-link" href="welcome.html">Ворота парка</a></li>
+<li class="nav-item ms-xl-2"><a class="btn btn-primary" href="order.html">Оформить заявку <span aria-hidden="true">↗</span></a></li>
+</ul></div>
+</div></nav></header><main id="main"><div class="container pt-4"><nav aria-label="Хлебные крошки"><ol class="breadcrumb small">
+<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+<li class="breadcrumb-item active" aria-current="page">Каталог</li>
+</ol></nav></div>
+<section class="section-space pt-4"><div class="container">
+<div class="row g-3 align-items-end mb-5">
+<div class="col-12 col-lg-8">
+<p class="eyebrow">КОЛЛЕКЦИЯ ВПЕЧАТЛЕНИЙ</p>
+<h1 class="section-title">Приключение —<br>на ваш выбор.</h1>
+<p class="text-secondary mb-0">От первого шага на остров до маленького сувенира на память.</p>
+</div>
+<div class="col-12 col-lg-4 text-lg-end"><span class="catalog-count" id="catalogCount" role="status" aria-live="polite">6 предложений</span></div>
+</div>
+<div class="row g-4">
+<aside class="col-12 col-lg-3" aria-labelledby="filterTitle"><form class="filter-panel" id="catalogFilters">
+<h2 class="h5 mb-4" id="filterTitle">Найти своё</h2>
+<label for="search" class="form-label">Название или описание</label><div class="input-group mb-4">
+<span class="input-group-text" aria-hidden="true">⌕</span><input class="form-control" id="search" name="search" type="search" placeholder="Например, сафари">
+</div>
+<fieldset>
+<legend class="fs-6">Категория</legend>
+<div class="form-check my-2">
+<input class="form-check-input" type="radio" name="category" id="cat-all" value="all" checked><label class="form-check-label" for="cat-all">Все предложения</label>
+</div>
+<div class="form-check my-2">
+<input class="form-check-input" type="radio" name="category" id="cat-tickets" value="tickets"><label class="form-check-label" for="cat-tickets">Билеты в парк</label>
+</div>
+<div class="form-check my-2">
+<input class="form-check-input" type="radio" name="category" id="cat-expeditions" value="expeditions"><label class="form-check-label" for="cat-expeditions">Экспедиции</label>
+</div>
+<div class="form-check my-2">
+<input class="form-check-input" type="radio" name="category" id="cat-souvenirs" value="souvenirs"><label class="form-check-label" for="cat-souvenirs">Сувениры</label>
+</div>
+</fieldset>
+<label for="sort" class="form-label mt-4">Сортировка</label><select id="sort" name="sort" class="form-select"><option value="default">Выбор парка</option>
+<option value="price-asc">Сначала дешевле</option>
+<option value="price-desc">Сначала дороже</option>
+<option value="name">По названию</option></select><button type="reset" class="btn btn-outline-light w-100 mt-4">Сбросить фильтры</button><noscript><p class="small mt-3">Фильтры требуют JavaScript. Все предложения показаны ниже.</p></noscript>
+</form>
+<div class="small text-secondary px-1 mt-4">Цены и программы вымышлены.<br>Оплата на сайте не предусмотрена.</div></aside>
+<div class="col-12 col-lg-9">
+<div class="row g-4" id="catalogGrid">
+<div class="col-12 col-md-6 col-xl-4" data-product-card="day"><article class="card park-card h-100"><a class="park-card__picture" href="product.html?id=day" tabindex="-1" aria-hidden="true"><img src="images/day.png" class="card-img-top" width="1536" height="1024" loading="lazy" alt="День в парке"><span class="badge park-badge">Первое знакомство</span></a><div class="card-body d-flex flex-column">
+<p class="eyebrow mb-2">Билеты</p>
+<h2 class="card-title h4"><a href="product.html?id=day">День в парке</a></h2>
+<p class="card-text text-secondary">Долина гигантов  тропы и музей — целый день открытий.</p>
+<div class="mt-auto d-flex flex-wrap align-items-end justify-content-between gap-2 pt-3">
+<p class="mb-0"><strong class="fs-4 price">2 900 ₽</strong><small class="d-block text-secondary">за гостя</small></p>
+<a class="btn btn-outline-light btn-sm" href="product.html?id=day" aria-label="Подробнее: День в парке">Подробнее ↗</a>
+</div>
+</div></article></div>
+<div class="col-12 col-md-6 col-xl-4" data-product-card="safari"><article class="card park-card h-100"><a class="park-card__picture" href="product.html?id=safari" tabindex="-1" aria-hidden="true"><img src="images/safari.png" class="card-img-top" width="1536" height="1024" loading="lazy" alt="Экспедиция «Тираннозавр»"><span class="badge park-badge">Выбор исследователей</span></a><div class="card-body d-flex flex-column">
+<p class="eyebrow mb-2">Экспедиции</p>
+<h2 class="card-title h4"><a href="product.html?id=safari">Экспедиция «Тираннозавр»</a></h2>
+<p class="card-text text-secondary">Отправляйтесь в закрытый сектор на джипе с рейнджером.</p>
+<div class="mt-auto d-flex flex-wrap align-items-end justify-content-between gap-2 pt-3">
+<p class="mb-0"><strong class="fs-4 price">4 900 ₽</strong><small class="d-block text-secondary">за гостя</small></p>
+<a class="btn btn-outline-light btn-sm" href="product.html?id=safari" aria-label="Подробнее: Экспедиция «Тираннозавр»">Подробнее ↗</a>
+</div>
+</div></article></div>
+<div class="col-12 col-md-6 col-xl-4" data-product-card="lab"><article class="card park-card h-100"><a class="park-card__picture" href="product.html?id=lab" tabindex="-1" aria-hidden="true"><img src="images/lab.png" class="card-img-top" width="1536" height="1024" loading="lazy" alt="Лаборатория открытий"><span class="badge park-badge">Для любопытных</span></a><div class="card-body d-flex flex-column">
+<p class="eyebrow mb-2">Экспедиции</p>
+<h2 class="card-title h4"><a href="product.html?id=lab">Лаборатория открытий</a></h2>
+<p class="card-text text-secondary">Исследуйте окаменелости и соберите свой первый скелет.</p>
+<div class="mt-auto d-flex flex-wrap align-items-end justify-content-between gap-2 pt-3">
+<p class="mb-0"><strong class="fs-4 price">1 900 ₽</strong><small class="d-block text-secondary">за гостя</small></p>
+<a class="btn btn-outline-light btn-sm" href="product.html?id=lab" aria-label="Подробнее: Лаборатория открытий">Подробнее ↗</a>
+</div>
+</div></article></div>
+<div class="col-12 col-md-6 col-xl-4" data-product-card="amber"><article class="card park-card h-100"><a class="park-card__picture" href="product.html?id=amber" tabindex="-1" aria-hidden="true"><img src="images/amber.png" class="card-img-top" width="1536" height="1024" loading="lazy" alt="Кулон «Янтарная капля»"><span class="badge park-badge">Коллекция Amber</span></a><div class="card-body d-flex flex-column">
+<p class="eyebrow mb-2">Сувениры</p>
+<h2 class="card-title h4"><a href="product.html?id=amber">Кулон «Янтарная капля»</a></h2>
+<p class="card-text text-secondary">Маленький фрагмент большого приключения — всегда рядом.</p>
+<div class="mt-auto d-flex flex-wrap align-items-end justify-content-between gap-2 pt-3">
+<p class="mb-0"><strong class="fs-4 price">1 490 ₽</strong><small class="d-block text-secondary">за штуку</small></p>
+<a class="btn btn-outline-light btn-sm" href="product.html?id=amber" aria-label="Подробнее: Кулон «Янтарная капля»">Подробнее ↗</a>
+</div>
+</div></article></div>
+<div class="col-12 col-md-6 col-xl-4" data-product-card="rex"><article class="card park-card h-100"><a class="park-card__picture" href="product.html?id=rex" tabindex="-1" aria-hidden="true"><img src="images/rex.png" class="card-img-top" width="1536" height="1024" loading="lazy" alt="Фигурка T. rex"><span class="badge park-badge">Коллекционная</span></a><div class="card-body d-flex flex-column">
+<p class="eyebrow mb-2">Сувениры</p>
+<h2 class="card-title h4"><a href="product.html?id=rex">Фигурка T. rex</a></h2>
+<p class="card-text text-secondary">Хозяин мелового периода на вашей книжной полке.</p>
+<div class="mt-auto d-flex flex-wrap align-items-end justify-content-between gap-2 pt-3">
+<p class="mb-0"><strong class="fs-4 price">2 490 ₽</strong><small class="d-block text-secondary">за штуку</small></p>
+<a class="btn btn-outline-light btn-sm" href="product.html?id=rex" aria-label="Подробнее: Фигурка T. rex">Подробнее ↗</a>
+</div>
+</div></article></div>
+<div class="col-12 col-md-6 col-xl-4" data-product-card="journal"><article class="card park-card h-100"><a class="park-card__picture" href="product.html?id=journal" tabindex="-1" aria-hidden="true"><img src="images/journal.png" class="card-img-top" width="1536" height="1024" loading="lazy" alt="Дневник исследователя"><span class="badge park-badge">В путь</span></a><div class="card-body d-flex flex-column">
+<p class="eyebrow mb-2">Сувениры</p>
+<h2 class="card-title h4"><a href="product.html?id=journal">Дневник исследователя</a></h2>
+<p class="card-text text-secondary">Запишите находки  зарисуйте следы  сохраните впечатления.</p>
+<div class="mt-auto d-flex flex-wrap align-items-end justify-content-between gap-2 pt-3">
+<p class="mb-0"><strong class="fs-4 price">790 ₽</strong><small class="d-block text-secondary">за штуку</small></p>
+<a class="btn btn-outline-light btn-sm" href="product.html?id=journal" aria-label="Подробнее: Дневник исследователя">Подробнее ↗</a>
+</div>
+</div></article></div>
+</div>
+<div class="alert alert-secondary mt-4" id="catalogEmpty" role="status" hidden>Ничего не нашлось. Измените запрос или сбросьте фильтры.</div>
+</div>
+</div>
+</div></section></main><footer class="site-footer mt-auto"><div class="container">
+<div class="row g-4 align-items-start">
+<div class="col-12 col-lg-5">
+<a class="footer-brand" href="welcome.html">JURASSIC PARK</a><p class="small text-secondary mt-2 mb-0">Учебный фан-проект · 2026<br>Вымышленный парк. Билеты и товары не продаются.</p>
+</div>
+<div class="col-6 col-lg-3">
+<p class="small eyebrow">Исследуйте</p>
+<a href="catalog.html">Каталог приключений</a><a href="index.html#faq">Вопросы и ответы</a>
+</div>
+<div class="col-6 col-lg-4">
+<p class="small eyebrow">Перед путешествием</p>
+<a href="contacts.html">Как нас найти</a><a href="index.html#about">О нашем острове</a>
+</div>
+</div>
+<div class="footer-bottom d-flex flex-wrap gap-3 justify-content-between">
+<span>Древний мир. Новые открытия.</span><a href="#top">Наверх ↑</a>
+</div>
+</div></footer><div class="modal fade" id="visitModal" tabindex="-1" aria-labelledby="visitModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+<div class="modal-header">
+<h2 class="modal-title fs-4" id="visitModalLabel">Перед экспедицией</h2>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+<div class="modal-body">
+<p>Наденьте удобную закрытую обувь и возьмите воду. Приходите в центр посетителей за 20 минут до выбранного времени.</p>
+<ul class="mb-3">
+<li>Не сходите с обозначенных маршрутов.</li>
+<li>Дети путешествуют со взрослым.</li>
+<li>На сафари следуйте указаниям рейнджера.</li>
+</ul>
+<div class="alert alert-info mb-0" role="alert">Это сценарий вымышленного парка. Настоящие заявки и платежи не принимаются.</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Понятно</button><a class="btn btn-primary" href="order.html">К заявке</a>
+</div>
+</div></div></div>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="js/products.js"></script><script src="js/main.js"></script>
+</body>
+</html>

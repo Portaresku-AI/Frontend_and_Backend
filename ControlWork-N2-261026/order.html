@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Учебная форма заказа билетов, экспедиций и сувениров Jurassic Park с проверкой полей и расчётом стоимости.">
+<meta name="theme-color" content="#10281f">
+<title>Оформление заявки — Jurassic Park</title>
+<link rel="icon" href="images/logo-film.png" type="image/png">
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+<body id="top" class="">
+<a class="visually-hidden-focusable skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header"><nav class="navbar navbar-expand-xl" data-bs-theme="dark" aria-label="Основное меню"><div class="container">
+<a class="navbar-brand park-brand" href="index.html" aria-label="Jurassic Park — главная"><img class="park-brand__logo" src="images/logo-film.png" width="1472" height="828" alt="Jurassic Park"><span class="park-brand__caption">ОСТРОВ<br>ОТКРЫТИЙ</span></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="mainNavbar"><ul class="navbar-nav ms-auto align-items-xl-center gap-xl-3">
+<li class="nav-item"><a class="nav-link " href="index.html">Парк</a></li>
+<li class="nav-item"><a class="nav-link " href="catalog.html">Каталог</a></li>
+<li class="nav-item"><a class="nav-link " href="product.html">Предложение</a></li>
+<li class="nav-item"><a class="nav-link " href="contacts.html">Контакты</a></li>
+<li class="nav-item"><a class="nav-link" href="welcome.html">Ворота парка</a></li>
+<li class="nav-item ms-xl-2"><a class="btn btn-primary" aria-current="page" href="order.html">Оформить заявку <span aria-hidden="true">↗</span></a></li>
+</ul></div>
+</div></nav></header><main id="main"><div class="container pt-4"><nav aria-label="Хлебные крошки"><ol class="breadcrumb small">
+<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+<li class="breadcrumb-item active" aria-current="page">Заявка</li>
+</ol></nav></div>
+<section class="section-space pt-4"><div class="container">
+<p class="eyebrow">СЛЕДУЮЩАЯ ОСТАНОВКА — ОСТРОВ</p>
+<h1 class="section-title mb-4">Ваше приключение<br>начинается здесь.</h1>
+<div class="alert alert-info mb-4" role="alert">Учебная форма: используйте вымышленные данные. Заявки не отправляются и не сохраняются.</div>
+<div class="row g-4 g-lg-5">
+<div class="col-12 col-lg-8"><form id="orderForm" class="info-panel" method="dialog">
+<p class="text-secondary small">Поля со звёздочкой * обязательны.</p>
+<h2 class="h4 mb-4">01 / Детали приключения</h2>
+<div class="row g-3">
+<div class="col-12 col-md-8">
+<label class="form-label" for="product">Предложение *</label><select class="form-select" id="product" name="product" required><option value="">Выберите из каталога</option>
+<option value="day">День в парке — 2900 ₽</option>
+<option value="safari">Экспедиция «Тираннозавр» — 4900 ₽</option>
+<option value="lab">Лаборатория открытий — 1900 ₽</option>
+<option value="amber">Кулон «Янтарная капля» — 1490 ₽</option>
+<option value="rex">Фигурка T. rex — 2490 ₽</option>
+<option value="journal">Дневник исследователя — 790 ₽</option></select>
+</div>
+<div class="col-12 col-md-4">
+<label class="form-label" for="quantity">Количество *</label><input class="form-control" type="number" id="quantity" name="quantity" value="1" min="1" max="10" step="1" required><div class="form-text">От 1 до 10 гостей или штук.</div>
+</div>
+<div class="col-12 col-md-6" id="dateField" hidden>
+<label class="form-label" for="visitDate">Дата посещения *</label><input class="form-control" type="date" id="visitDate" name="visit_date" disabled><div class="form-text">Начиная с сегодняшнего дня.</div>
+</div>
+<div class="col-12 col-md-6" id="timeField" hidden>
+<label class="form-label" for="visitTime">Начало программы *</label><select class="form-select" id="visitTime" name="visit_time" disabled><option value="">Выберите время</option>
+<option value="10:00">10:00</option>
+<option value="13:00">13:00</option>
+<option value="16:00">16:00</option></select>
+</div>
+</div>
+<div class="alert alert-secondary small mt-3 mb-0" id="productNote" role="status">Выберите предложение, чтобы увидеть условия.</div>
+<h2 class="h4 mt-5 mb-4">02 / Контактные данные</h2>
+<div class="row g-3">
+<div class="col-12 col-md-6">
+<label class="form-label" for="name">Имя *</label><input class="form-control" id="name" name="customer_name" type="text" minlength="2" maxlength="60" autocomplete="given-name" placeholder="Александр" required>
+</div>
+<div class="col-12 col-md-6">
+<label class="form-label" for="email">E-mail *</label><input class="form-control" id="email" name="email" type="email" maxlength="120" autocomplete="email" placeholder="explorer@example.com" required>
+</div>
+<div class="col-12">
+<label class="form-label" for="phone">Телефон *</label><div class="input-group">
+<span class="input-group-text" id="phonePrefix">+7</span><input class="form-control" id="phone" name="phone" type="tel" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" autocomplete="tel-national" placeholder="9991234567" aria-describedby="phonePrefix phoneHint" required>
+</div>
+<div class="form-text" id="phoneHint">10 цифр без +7, пробелов и скобок.</div>
+</div>
+<div class="col-12">
+<label class="form-label" for="comment">Комментарий</label><textarea class="form-control" id="comment" name="comment" rows="4" maxlength="500" placeholder="О чём нам стоит знать перед вашим визитом?"></textarea>
+</div>
+</div>
+<div class="form-check my-4">
+<input class="form-check-input" type="checkbox" id="consent" name="consent" value="yes" required><label class="form-check-label" for="consent">Согласен на обработку введённых данных в рамках учебной демонстрации *</label>
+</div>
+<div class="d-flex flex-wrap gap-3">
+<button class="btn btn-primary btn-lg" id="submitOrder" type="submit" disabled>Проверить заявку ↗</button><button class="btn btn-outline-light" type="reset">Очистить</button>
+</div>
+<noscript><p class="text-warning mt-3">Для проверки заявки и расчёта суммы включите JavaScript. Без него отправка недоступна.</p></noscript>
+</form></div>
+<aside class="col-12 col-lg-4"><div class="order-summary info-panel">
+<p class="eyebrow">ВАШ ВЫБОР</p>
+<img src="images/logo-film.png" width="120" height="90" alt="Jurassic Park" class="summary-logo mb-4"><h2 class="h4" id="summaryName">Выберите приключение</h2>
+<p class="small text-secondary" id="summaryDetails">Или найдите сувенир, который останется с вами.</p>
+<hr>
+<div class="d-flex justify-content-between align-items-center gap-2">
+<span>Итого</span><strong class="fs-3 price" id="summaryTotal" aria-live="polite">—</strong>
+</div>
+<p class="small text-secondary mt-3 mb-0">Расчёт демонстрационный. Никаких списаний или бронирований.</p>
+<a class="text-link d-inline-block mt-4" href="catalog.html">Изменить выбор ↗</a>
+</div></aside>
+</div>
+</div></section></main><footer class="site-footer mt-auto"><div class="container">
+<div class="row g-4 align-items-start">
+<div class="col-12 col-lg-5">
+<a class="footer-brand" href="welcome.html">JURASSIC PARK</a><p class="small text-secondary mt-2 mb-0">Учебный фан-проект · 2026<br>Вымышленный парк. Билеты и товары не продаются.</p>
+</div>
+<div class="col-6 col-lg-3">
+<p class="small eyebrow">Исследуйте</p>
+<a href="catalog.html">Каталог приключений</a><a href="index.html#faq">Вопросы и ответы</a>
+</div>
+<div class="col-6 col-lg-4">
+<p class="small eyebrow">Перед путешествием</p>
+<a href="contacts.html">Как нас найти</a><a href="index.html#about">О нашем острове</a>
+</div>
+</div>
+<div class="footer-bottom d-flex flex-wrap gap-3 justify-content-between">
+<span>Древний мир. Новые открытия.</span><a href="#top">Наверх ↑</a>
+</div>
+</div></footer><div class="modal fade" id="visitModal" tabindex="-1" aria-labelledby="visitModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+<div class="modal-header">
+<h2 class="modal-title fs-4" id="visitModalLabel">Перед экспедицией</h2>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+<div class="modal-body">
+<p>Наденьте удобную закрытую обувь и возьмите воду. Приходите в центр посетителей за 20 минут до выбранного времени.</p>
+<ul class="mb-3">
+<li>Не сходите с обозначенных маршрутов.</li>
+<li>Дети путешествуют со взрослым.</li>
+<li>На сафари следуйте указаниям рейнджера.</li>
+</ul>
+<div class="alert alert-info mb-0" role="alert">Это сценарий вымышленного парка. Настоящие заявки и платежи не принимаются.</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Понятно</button><a class="btn btn-primary" href="order.html">К заявке</a>
+</div>
+</div></div></div>
+<div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+<div class="modal-header">
+<h2 class="modal-title fs-4" id="resultModalLabel">Всё готово к приключению</h2>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+<div class="modal-body">
+<div class="alert alert-success" role="alert">Проверка формы пройдена. Это демонстрация: заявка не отправлена.</div>
+<p id="resultSummary" class="mb-0"></p>
+<p class="small text-secondary mt-3 mb-0">Данные не сохраняются. Оплата не требуется.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Вернуться к форме</button><a class="btn btn-primary" href="catalog.html">Продолжить исследование</a>
+</div>
+</div></div></div>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="js/products.js"></script><script src="js/main.js"></script>
+</body>
+</html>
