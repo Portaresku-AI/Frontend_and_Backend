@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10281f" />
+    <meta
+      name="description"
+      content="Добро пожаловать. Учебный парк Jurassic Park."
+    />
+    <title>Добро пожаловать — Jurassic Park</title>
+    <link rel="icon" href="images/logo-film.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img
+            src="images/logo-film-480.webp"
+            width="1472"
+            height="828"
+            alt="Jurassic Park"
+          /><span>ОСТРОВ<br />ОТКРЫТИЙ</span></a
+        >
+        <nav class="desktop-nav" aria-label="Основное меню">
+          <ul class="menu">
+            <li><a href="index.html">Парк</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="product.html">Предложения</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="welcome.html" aria-current="page">Ворота парка</a></li>
+            <li><a href="order.html">Заявка</a></li>
+          </ul>
+        </nav>
+        <details class="mobile-nav">
+          <summary>Меню сайта</summary>
+          <nav aria-label="Мобильное меню">
+            <ul class="menu">
+              <li><a href="index.html">Парк</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="product.html">Предложения</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li>
+                <a href="welcome.html" aria-current="page">Ворота парка</a>
+              </li>
+              <li><a href="order.html">Заявка</a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="welcome">
+        <picture
+          ><source
+            type="image/webp"
+            srcset="
+              images/hero-640.webp   640w,
+              images/hero-1280.webp 1280w,
+              images/hero-1920.webp 1920w
+            "
+            sizes="100vw" />
+          <img
+            src="images/hero.png"
+            alt=""
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+        /></picture>
+        <div class="container welcome-content">
+          <p class="eyebrow">ДОБРО ПОЖАЛОВАТЬ НА ОСТРОВ</p>
+          <img
+            class="welcome-logo"
+            src="images/logo-film-960.webp"
+            width="1472"
+            height="828"
+            alt="Логотип Jurassic Park из фильма"
+          />
+          <h1 class="visually-hidden">Добро пожаловать в Jurassic Park</h1>
+          <p>Некоторые миры стоит увидеть своими глазами.</p>
+          <a class="button" href="index.html">Начнём →</a>
+          <p class="muted">Откройте ворота. Найдите своё приключение.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="footer-brand" href="welcome.html">JURASSIC PARK</a>
+            <p>
+              Учебный фан-проект · 2026<br />Вымышленный парк. Билеты и товары
+              не продаются.
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">Исследуйте</p>
+            <a href="catalog.html">Каталог приключений</a
+            ><a href="index.html#faq">Вопросы и ответы</a>
+          </div>
+          <div>
+            <p class="eyebrow">Перед путешествием</p>
+            <a href="contacts.html">Центр посетителей</a
+            ><a href="index.html#about">О нашем острове</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>Древний мир. Новые открытия.</span><a href="#top">Наверх ↑</a>
+        </div>
+      </div>
+    </footer>
+    <dialog id="visit-dialog" aria-labelledby="visit-title">
+      <h2 id="visit-title">Перед экспедицией</h2>
+      <p>
+        Наденьте удобную закрытую обувь и возьмите воду. Приходите за 20 минут
+        до начала.
+      </p>
+      <ul>
+        <li>Не сходите с обозначенных маршрутов.</li>
+        <li>Дети путешествуют со взрослым.</li>
+        <li>На сафари следуйте указаниям рейнджера.</li>
+      </ul>
+      <p class="muted">Это сценарий вымышленного парка.</p>
+      <form method="dialog">
+        <button class="button" autofocus>Понятно</button>
+      </form>
+    </dialog>
+    <dialog id="result-dialog" aria-labelledby="result-title">
+      <h2 id="result-title">Всё готово к приключению</h2>
+      <p id="result-text">
+        Поля заполнены. Это демонстрация: ничего не отправлено и не сохранено.
+      </p>
+      <form method="dialog">
+        <button class="button" autofocus>Вернуться к форме</button>
+      </form>
+    </dialog>
+  </body>
+</html>

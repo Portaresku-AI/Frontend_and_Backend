@@ -1,0 +1,514 @@
+{
+  "checkedAt": "2026-11-08T23:25:28.038Z",
+  "widths": [
+    360,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "layouts": [
+    {
+      "project": "kr3-responsive-shop",
+      "page": "index",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "catalog",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "product",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "order",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "contacts",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "welcome",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "index",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "catalog",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "product",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "order",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "contacts",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "welcome",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "index",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "catalog",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "product",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "order",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "contacts",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "welcome",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "index",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "catalog",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "product",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "order",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "contacts",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "welcome",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "index",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "catalog",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "product",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "order",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "contacts",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr3-responsive-shop",
+      "page": "welcome",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "index",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "catalog",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "product",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "order",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "contacts",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "welcome",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "cart",
+      "width": 360,
+      "scrollWidth": 360,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "index",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "catalog",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "product",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "order",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "contacts",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "welcome",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "cart",
+      "width": 430,
+      "scrollWidth": 430,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "index",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "catalog",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "product",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "order",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "contacts",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "welcome",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "cart",
+      "width": 768,
+      "scrollWidth": 768,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "index",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "catalog",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "product",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "order",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "contacts",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "welcome",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "cart",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "index",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "catalog",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "product",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "order",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "contacts",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "welcome",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    },
+    {
+      "project": "kr4-js-shop",
+      "page": "cart",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "passed": true
+    }
+  ],
+  "scenarios": [
+    "KR3 skip-link receives first keyboard focus",
+    "Skip-link moves focus to main",
+    "KR3 native dialog opens",
+    "Dialog keeps keyboard focus inside",
+    "Escape closes dialog and restores trigger focus",
+    "Nine cards generated by JS",
+    "Search trims and ignores letter case",
+    "Search and category combine into empty state",
+    "Empty-state action resets filters",
+    "Combined category and descending price sort",
+    "Sort preserves source array",
+    "Availability filter excludes unavailable offer",
+    "Unavailable product cannot be added",
+    "Cart survives navigation and merges duplicate ids",
+    "reduce computes 2 × 2900 + 790 = 6590",
+    "PARK10 discounts total to 5931",
+    "Cart and promo survive reload",
+    "Invalid cart quantity rejected without changing state",
+    "Quantity change recalculates discount",
+    "Checkout selects cart from URL",
+    "Cart checkout uses quantities from basket",
+    "Empty form shows field errors",
+    "Invalid email and phone rejected",
+    "Past visit date rejected",
+    "Valid checkout opens result dialog",
+    "User text stays literal",
+    "User text does not create HTML elements",
+    "Successful form clears personal fields",
+    "Personal data not stored",
+    "KR4 dialog returns focus",
+    "Souvenir order does not require a visit date",
+    "Expedition exposes time selector",
+    "Expedition requires a time",
+    "Expedition result includes selected time",
+    "Unknown product id handled",
+    "Feedback empty message rejected",
+    "Feedback success scenario",
+    "Remove item updates basket",
+    "Clear cart displays empty state",
+    "Empty cart checkout rejected",
+    "Malformed stored JSON does not crash",
+    "Stored state validates ids, stock and quantity",
+    "Blocked localStorage allows in-memory cart"
+  ],
+  "errors": [],
+  "passed": true
+}
